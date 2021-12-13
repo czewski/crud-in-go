@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="/static/stylesheets/welcome.css">
+
+         <!-- The welcome struct (shown in the main.go code) is received within the HTML and we just need to use the . operator and retrieve the information we want -->
+         <title>Welcome {{.Name}}</title>
+   </head>
+
+<body id="parent">
+    <div class="welcome center" id="child">
+        <div>
+            {{.Time}}
+        </div>
+    </div>    
+</body>
+</html>         
