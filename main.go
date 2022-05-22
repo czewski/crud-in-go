@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/czewski/crud-in-go/pkg/handlers"
+	"github.com/czewski/crud-in-go/routes"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -10,9 +10,7 @@ const port = 8000
 func main() {
 	app := fiber.New()
 
-	app.Get("/player/:id?", handlers.ReadPlayers)
-	app.Post("/player", handlers.CreatePlayers)
-	app.Put("/player/:id", handlers.UpdatePlayers)
-	app.Delete("/player/:id", handlers.DeletePlayers)
+	routes.RouteManager(app) //add this
+
 	app.Listen(":8000")
 }
