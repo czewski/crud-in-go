@@ -1,5 +1,0 @@
-	"database/sql"  // Pacote Database SQL para realizar Query
-	"log"           // Mostra mensagens no console
-	"net/http"      // Gerencia URLs e Servidor Web
-	"text/template" // Gerencia templates
-	_ "github.com/go-sql-driver/mysql" // Driver Mysql para Go
